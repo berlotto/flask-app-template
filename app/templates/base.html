@@ -1,0 +1,33 @@
+{% extends "bootstrap_base.html" %}
+
+{%block title%}Base{%endblock%}
+
+{%block body_content%}
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+
+			<div class="navbar">
+			  <div class="navbar-inner">
+			    <a class="brand" href="#">MySiteName</a>
+			    <ul class="nav">
+			      <li class="active"><a href="/">Home</a></li>
+			      <li><a href="/list">List</a></li>
+			      <li><a href="/new">New</a></li>
+			    </ul>
+			  </div>
+			</div>
+
+			<form class="form form-inline pull-right">
+			  <input type="text" class="span2">
+			  <button type="submit" class="btn">Submit</button>
+			</form>
+
+		</div>
+	</div>
+	{%block main_content%}{%endblock%}
+
+</div>
+
+{%endblock%}
