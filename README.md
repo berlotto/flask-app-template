@@ -14,12 +14,20 @@ Use this Flask app to initiate your project with less work. In this application 
 * **Flask-Mail** - Makes sending mails from Flask applications very easy and has also support for unittesting.
 * **Flask-Restless** - Flask-Restless provides simple generation of ReSTful APIs for database models defined using Flask-SQLAlchemy.
 * **Flask-SQLAlchemy** - Adds SQLAlchemy support to Flask. Quick and easy.
+* **Flask-PyMongo** - Add PyMongo Support MongoDB.
 * **Flask-Themes** - Flask-Themes makes it easy for your application to support a wide range of appearances.
 * **Flask-WTF** - Flask-Themes makes it easy for your application to support a wide range of appearances.
+
+## Requirements
+
+gcc, make, Python 2.5+, python-pip, virtualenv
 
 ## Instalation
 
 First, clone this repository.
+
+    $ git clone http://github.com/berlotto/flask-app-template
+    $ cd flask-app-template
 
 Create a virtualenv, and activate this: 
 
@@ -28,11 +36,11 @@ Create a virtualenv, and activate this:
 
 After, install all necessary to run:
 
-    $ pip install -r requirements
+    $ pip install -r requirements.txt
 
 Than, run the aplication:
 
-	$ python application.py
+	$ python run.py
 
 To see your application, access this url in your browser: 
 
