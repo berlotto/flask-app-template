@@ -21,6 +21,9 @@ Use this Flask app to initiate your project with less work. In this application 
 
 First, clone this repository.
 
+    $ git clone http://github.com/berlotto/flask-app-template
+    $ cd flask-app-template
+
 Create a virtualenv, and activate this: 
 
     $ virtualenv env 
@@ -28,11 +31,11 @@ Create a virtualenv, and activate this:
 
 After, install all necessary to run:
 
-    $ pip install -r requirements
+    $ pip install -r requirements.txt
 
 Than, run the aplication:
 
-	$ python application.py
+	$ python run.py
 
 To see your application, access this url in your browser: 
 
