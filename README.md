@@ -38,7 +38,7 @@ After, install all necessary to run:
 
     $ pip install -r requirements.txt
 
-Than, run the aplication:
+Than, run the application:
 
 	$ python run.py
 
