@@ -16,11 +16,11 @@ Use this Flask app to initiate your project with less work. In this application 
 * **Flask-SQLAlchemy** - Adds SQLAlchemy support to Flask. Quick and easy.
 * **Flask-PyMongo** - Add PyMongo Support MongoDB.
 * **Flask-Themes** - Flask-Themes makes it easy for your application to support a wide range of appearances.
-* **Flask-WTF** - Flask-Themes makes it easy for your application to support a wide range of appearances.
+* **Flask-WTF** - Simple integration of Flask and WTForms, including CSRF, file upload, and reCAPTCHA.
 
 ## Requirements
 
-gcc, make, Python 2.5+, python-pip, virtualenv
+Python 3.8.5+, pipenv
 
 ## Instalation
 
@@ -29,18 +29,13 @@ First, clone this repository.
     $ git clone http://github.com/berlotto/flask-app-template
     $ cd flask-app-template
 
-Create a virtualenv, and activate this: 
-
-    $ virtualenv env 
-    $ source env/bin/activate
-
 After, install all necessary to run:
 
-    $ pip install -r requirements.txt
+    $ pipenv install
 
 Than, run the application:
 
-	$ python run.py
+	$ pipenv run python run.py
 
 To see your application, access this url in your browser: 
 

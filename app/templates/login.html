@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% import "bootstrap_wtf.html" as wtf %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {%block title%}Login!{%endblock%}
 
@@ -7,14 +7,14 @@
 
 	<h1>Login</h1>
 	<div class="row">
-		<div class="span12">
+		<div class="col-md-4 col-md-offset-4">
 
-			<form action="." method="post" name="loginform">
+			<form action="." method="post" class="form form-horizontal" name="loginform">
 				{{ wtf.form_errors(form,"only") }}
 
 				{{ form.hidden_tag() }}
-				{{ wtf.horizontal_field(form.user) }}<br>
-				{{ wtf.horizontal_field(form.password) }}
+				{{ wtf.form_field(form.user) }}<br>
+				{{ wtf.form_field(form.password) }}
 
 				<div class="form-actions">
 					<button name-"action_save" type="submit" class="btn btn-primary">Salvar</button>
