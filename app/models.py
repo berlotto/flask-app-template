@@ -1,9 +1,3 @@
-# -*- encoding: utf-8 -*-
-"""
-Python Aplication Template
-Licence: GPLv3
-"""
-
 from app import db
 
 class ModelExample(db.Model):
@@ -31,7 +25,7 @@ class User(db.Model):
         return False
 
     def get_id(self):
-        return unicode(self.id)
+        return str(self.id)
 
     def __repr__(self):
         return '<User %r>' % (self.nickname)
