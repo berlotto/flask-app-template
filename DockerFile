@@ -1,0 +1,13 @@
+FROM python:3.0-slim
+
+WORKDIR /flask-app-template
+
+COPY reqiurements.txt
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY flask-app-template .
+
+EXPOSE 5000
+
+CMD ["python","flask-app-template"]
