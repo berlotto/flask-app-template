@@ -1,7 +1,10 @@
 *.py[cod]
+pycache
 
 # C extensions
 *.so
+
+.vscode 
 
 #virtualenv
 env
